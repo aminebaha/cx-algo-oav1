@@ -2,20 +2,20 @@ module.exports = {
 
     bubble_sort:    (array)=>{
         let pivot = 0
-        let swap =  true
+        let isSwapped =  true
        do {
-        swap = false
+        isSwapped = false
         for (let i = 0; i < array.length; i++) {
        
             if(array[i]>array[i+1]) {
                 pivot = array[i]
                 array[i] = array[i+1]
                 array[i+1] = pivot
-                swap =true
+                isSwapped =true
                 
             }
         }
-    }while(swap);
+    }while(isSwapped);
      
         return array
         }
