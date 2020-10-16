@@ -55,12 +55,7 @@ shift:  (array) =>{
 
 diff:   (array) => {
     const e = require('./e04')
-    let largest = 0
-
-    let max = e.max(array)
-    let min = e.min(array)
-
-    return Math.abs(max-min)
+    return Math.abs(e.max(array)-e.min(array))
 }
 
 
